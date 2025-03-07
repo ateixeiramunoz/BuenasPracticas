@@ -1,0 +1,17 @@
+            - name: Deploy Docker
+  # You may pin to the exact commit or the version.
+  uses: sidikfaha/deploy-docker
+  with:
+    # Indicate the ssh server address to deploy on. It could be an EC2, GCE or any server instance on the cloud
+    ssh-server: 
+    # Provide a valid private key to be able to connect to the server
+    ssh-private-key: 
+    # Provide the environment variables you want to set to the container
+    env: # optional, default is 
+    # The image you want to deploy (owner/image_name:tag). If it's a private image, make sure the server is logged in to the right docker account.
+    image: 
+    # The name to attribute to the container
+    container-name: 
+    # Forward a port
+    port: 
+          
