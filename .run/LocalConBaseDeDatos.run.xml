@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="LocalConBaseDeDatos" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <module name="buenaspracticas" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="com.eoi.java6.project1.Project1Application" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
