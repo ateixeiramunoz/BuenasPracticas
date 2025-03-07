@@ -260,6 +260,7 @@ class EntidadPadreRepositoryTests {
         log.info("Iniciando la prueba encontrarEntidadPadreByNombre...");
         var entidadPadre = new EntidadPadre();
         entidadPadre.setNombre("JetBrains");
+        entidadPadreRepository.save(entidadPadre);
         log.debug("Buscando EntidadPadre con nombre {}", entidadPadre.getNombre());
         EntidadPadre entidadPadre1 = entidadPadreRepository.findByNombre("JetBrains").orElseThrow();
         log.info("EntidadPadre encontrada con nombre {}", entidadPadre1.getNombre());

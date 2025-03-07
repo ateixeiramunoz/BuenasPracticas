@@ -25,7 +25,7 @@ import java.util.Arrays;
  */
 @Configuration
 @Log4j2
-public class DefaultEntityLoader {
+public class InitialDataLoader {
 
     private final EntidadPadreRepository repository;
     private final EntidadHijaRepository entidadHijaRepository;
@@ -47,11 +47,10 @@ public class DefaultEntityLoader {
      * Cada método anotado con `@Profile` y `@PostConstruct` permite la carga de datos
      * iniciales dependiendo del perfil activo.
      */
-    public DefaultEntityLoader(EntidadPadreRepository repository, EntidadHijaRepository entidadHijaRepository) {
+    public InitialDataLoader(EntidadPadreRepository repository, EntidadHijaRepository entidadHijaRepository) {
         this.repository = repository;
         this.entidadHijaRepository = entidadHijaRepository;
     }
-
 
 
     /**

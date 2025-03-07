@@ -13,17 +13,17 @@ services:
     restart: on-failure # Reinicia el contenedor automáticamente si falla.
 
   db: # Servicio para la base de datos MySQL.
-    image: mysql:5.7 # Utiliza la imagen oficial de MySQL versión 5.7.
+    image: mysql:8.0.32 # Utiliza la imagen oficial de MySQL versión 5.7.
     restart: always # Reinicia siempre el contenedor si se detiene.
     environment:
       # Variables de entorno necesarias para configurar la base de datos MySQL.
-      MYSQL_DATABASE: 'db' # Nombre de la base de datos por defecto.
+      MYSQL_DATABASE: 'testdb' # Nombre de la base de datos por defecto.
       MYSQL_USER: 'appuser' # Usuario creado para acceder a la base de datos.
       MYSQL_PASSWORD: 'password123' # Contraseña para el usuario de la base de datos.
       MYSQL_ROOT_PASSWORD: 'password' # Contraseña del usuario root de MySQL.
     ports:
       # Se exponen los puertos para permitir el acceso externo a la base de datos.
-      - '3307:3306' # El puerto 3307 del host se enlaza al puerto 3306 dentro del contenedor MySQL.
+      - '3306:3306' # El puerto 3306 del host se enlaza al puerto 3306 dentro del contenedor MySQL.
     expose:
       # Expone el puerto de MySQL dentro del contenedor (solo accesible dentro de la red Docker).
       - '3306' # Puerto en el que MySQL está escuchando.
@@ -35,10 +35,10 @@ services:
       timeout: 300s # Tiempo de espera máximo para el chequeo (300 segundos).
       retries: 10 # Número de intentos antes de marcar el contenedor como no saludable.
 
-    volumes:
+#    volumes:
       # Persistencia de datos: los datos de MySQL se guardan en el sistema de archivos del host.
-      - my-db:/var/lib/mysql # El volumen "my-db" se asigna al directorio donde MySQL almacena sus datos.
+  #    - my-db:/var/lib/mysql # El volumen "my-db" se asigna al directorio donde MySQL almacena sus datos.
 
 # Sección para definir volúmenes
-volumes:
-  my-db: # Se crea un volumen llamado "my-db" para almacenar los datos de la base de datos persistentemente.
+#volumes:
+ # my-db: # Se crea un volumen llamado "my-db" para almacenar los datos de la base de datos persistentemente.
