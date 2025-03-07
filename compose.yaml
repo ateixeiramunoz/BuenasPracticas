@@ -1,1 +1,2 @@
+# Este archivo se utiliza para configurar los servicios de Docker necesarios, como la base de datos MySQL, para ser utilizados por la aplicación Spring Boot.
 services:

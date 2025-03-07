@@ -50,7 +50,7 @@ El control de versiones es una práctica esencial en el desarrollo de software, 
 
 ---
 
-## Buenas Prácticas con Git
+
 
 ### Comandos Básicos y Uso
 
@@ -76,14 +76,9 @@ git push
 git pull
 ```
 
+## Buenas Prácticas con Git
 
 
-### Estrategias de Branching y Gestión según el Tipo de Proyecto
-
-La elección de una estrategia de ramas dependerá de las necesidades del proyecto. Aquí se describen algunas metodologías y cómo adaptarlas:
-A continuación se añade un apartado específico en la sección de estrategias, en el que se detalla cómo se puede integrar Jira con GitHub para complementar y potenciar el uso de las estrategias de branching en diferentes tipos de proyectos:
-
----
 
 ### Estrategias de Branching y Gestión según el Tipo de Proyecto
 
@@ -159,10 +154,6 @@ La integración entre Jira y GitHub potencia la gestión de proyectos al vincula
   - Configurar de manera centralizada las reglas de vinculación.
   - Personalizar las transiciones de estado en función de las necesidades del proyecto.
   - Integrar alertas y notificaciones para mantener al equipo informado.
-
----
-
-A continuación se presenta una versión ampliada y detallada del apartado de Gestión de Versiones y Releases, con énfasis en su importancia, estrategias y procesos paso a paso:
 
 ---
 
